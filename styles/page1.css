@@ -1,0 +1,91 @@
+.pg1main{
+  height:800px;
+  padding:10px;
+  margin:0px;
+  background-image: url("../files/bg-img1.4.1.png");
+  background-size: cover; /* Makes the image cover the entire div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  
+}
+
+.pg1main .header{
+  /* background-color: lightcoral; */
+  position:absolute;/********/
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:5px;
+  left:10px;
+  right:0px;
+}
+.pg1main .header .logo{
+  height:100px;
+  margin-left:25px;
+}
+
+.pg1main .header .logo .logoimage{
+  max-height:100%;
+  max-width:100%;
+  object-fit:contain;
+
+}
+.pg1main .header .menu{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pg1main .header .menu *:hover{
+  color:rgba(52,160,164,255);
+
+  
+}
+.pg1main .header .menu *{
+  padding-left:10px;
+  padding-right:10px;
+  font-size:20px;
+  font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:white;
+}
+.pg1main .header .socialmedia{
+  display:flex;
+  flex-direction:column;
+  margin-right:0px;
+
+}
+.pg1main .header .socialmedia *{
+  padding-top:5px;
+}
+.pg1main .header .socialmedia .mailicon,.pg1main .header .socialmedia .phoneicon{
+  width:25px;
+  height:25px;
+}
+.pg1main .header .socialmedia .webicon{
+  width:50px;
+  height:50px;
+  margin-right:10px;
+}
+
+.tagline{
+  position:absolute;
+  display:inline-block;
+  top:320px;
+  left:280px;
+  color:white;
+  font-size:45px;
+  font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.sideline{
+  position:absolute;
+  display:inline-block;
+  color:rgba(52,160,164,255);
+  font-size:30px;
+  top:610px;
+  left:420px;
+  font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+
+}

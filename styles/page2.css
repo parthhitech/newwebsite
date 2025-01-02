@@ -1,0 +1,73 @@
+.pg2main{
+  height:900px;
+  position:relative;
+  background-color:rgb(209, 208, 208);
+}
+.pg2main .what{
+  position: absolute;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  top:120px;
+  left: 50%;
+  transform: translateX(-50%);  
+  font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.pg2main .what .description{
+  font-size:20px;
+  text-align: center;
+  color:rgb(78, 77, 77);
+  padding-top:30px
+
+  
+}
+.pg2main .what .mainline{
+  font-size:60px;
+}
+
+.pg2main .whatdetail{
+  position:absolute;
+  display:grid;
+  /* background-color:black; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap:40px;
+  top:400px;
+  padding-left:10px;
+  padding-right:10px;
+  column-width:800px;
+}
+
+.pg2main .whatdetail *{
+  /* background-color:lightblue; */
+  padding:7.5px;
+  font-size:20px;
+  font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pg2main .whatdetail .detail1 .detail1-1,.pg2main .whatdetail .detail2 .detail2-1, .pg2main .whatdetail .detail3 .detail3-1,.pg2main .whatdetail .detail4 .detail4-1, .pg2main .whatdetail .detail5 .detail5-1{
+  color:rgba(52,160,164,255);
+
+}
+.pg2main .whatdetail .detail1 .detail1-3,.pg2main .whatdetail .detail2 .detail2-3, .pg2main .whatdetail .detail3 .detail3-3,.pg2main .whatdetail .detail4 .detail4-3, .pg2main .whatdetail .detail5 .detail5-3{
+  color:rgb(78, 77, 77);
+}
+
+.centered-line {
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.centered-line hr {
+  width: 250px; 
+  border: 1px solid #00b5ad; 
+  background-color: #00b5ad; 
+}
+
+
