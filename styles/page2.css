@@ -36,6 +36,11 @@
   padding-right:10px;
   column-width:800px;
 }
+@media(max-width:1200px){
+  .pg2main .whatdetail{
+    grid-template-columns:1fr 1fr 1fr;
+  }
+}
 
 .pg2main .whatdetail *{
   /* background-color:lightblue; */
@@ -52,9 +57,9 @@
   color:rgb(78, 77, 77);
 }
 
-.centered-line {
+.pg2main .centered-line {
   position:absolute;
-  top:40%;
+  top:35%;
   left:50%;
   transform: translateX(-50%);
 
@@ -64,10 +69,9 @@
   margin: 20px 0;
 }
 
-.centered-line hr {
+.pg2main .centered-line hr {
   width: 250px; 
   border: 1px solid #00b5ad; 
   background-color: #00b5ad; 
 }
-
 
