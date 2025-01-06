@@ -92,3 +92,21 @@
   
 
 }
+.pg1main .menubutton{
+  width:20%;
+  position:absolute;
+  right:2%;
+  height:10%;
+  visibility: hidden;
+}
+.pg1main .menubutton .menuicon{
+  object-fit:contain;
+  width:50%;
+  height:100%;
+}
+
+@media(max-width:600px){
+  .pg1main .menubutton{
+    visibility: visible;
+  }
+}
