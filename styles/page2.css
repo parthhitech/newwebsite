@@ -35,10 +35,18 @@
   padding-left:10px;
   padding-right:10px;
   column-width:800px;
+  margin:3%;
 }
 @media(max-width:1200px){
   .pg2main .whatdetail{
     grid-template-columns:1fr 1fr 1fr;
+  }
+  .pg2main .whatdetail > :nth-child(4) {
+    grid-column: 1 / span 2;  /* Center the 4th element in the second row */
+  }
+
+  .pg2main .whatdetail > :nth-child(5) {
+    grid-column:2 / span 2; /* Align the 5th element to the last column */
   }
 }
 
@@ -59,14 +67,13 @@
 
 .pg2main .centered-line {
   position:absolute;
-  top:35%;
+  top:40%;
   left:50%;
   transform: translateX(-50%);
 
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
 }
 
 .pg2main .centered-line hr {
