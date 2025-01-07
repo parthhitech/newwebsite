@@ -107,10 +107,9 @@
   width:100%;
   height:100%;
 }
-
 @media(max-width:600px){
   .pg1main{
-    height:70vh;
+    height:80vh;
   }
   .pg1main .menubutton{
     visibility: visible;
