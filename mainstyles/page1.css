@@ -1,6 +1,6 @@
 .pg1main{
   height:95vh;
-  padding:10px;
+  padding:0.5%;
   margin:3%;
   background-image:  linear-gradient(to bottom, rgba(209, 208, 208, 0) 85%, rgb(209, 208, 208) 100%),url("../files/bg-img1.4.1.png");
   background-size: cover; /* Makes the image cover the entire div */
@@ -8,6 +8,8 @@
   background-repeat: no-repeat;
   position:relative;
   border-radius:30px;
+  display:flex;
+  justify-content: center;
   
 }
 
@@ -18,13 +20,15 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top:5px;
-  left:10px;
-  right:0px;
+  width:100%;
+  left:1%;
+  right:1%;
+  height:20%;
 }
 .pg1main .header .logo{
-  height:100px;
-  margin-left:15px;
+  height:75%;
+  margin-left:1%;
+  width:10%;
 }
 
 .pg1main .header .logo .logoimage{
@@ -36,7 +40,7 @@
 .pg1main .header .menu{
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 }
 .pg1main .header .menu *:hover{
   color:rgba(52,160,164,255);
@@ -44,8 +48,8 @@
   
 }
 .pg1main .header .menu *{
-  padding-left:10px;
-  padding-right:10px;
+  padding-left:2%;
+  padding-right:2%;
   font-size:20px;
   font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color:white;
@@ -53,21 +57,20 @@
 .pg1main .header .socialmedia{
   display:flex;
   flex-direction:column;
-  margin-right:2%;
-
+  padding-right:2%;
 }
 .pg1main .header .socialmedia *{
-  padding-top:5px;
+  margin-top:10%;
+  align-items:center;
 }
 .pg1main .header .socialmedia .mailicon,.pg1main .header .socialmedia .phoneicon{
-  width:25px;
-  height:25px;
+  width:60%;
 }
-.pg1main .header .socialmedia .webicon{
+/* .pg1main .header .socialmedia .webicon{
   width:50px;
   height:50px;
   margin-right:10px;
-}
+} */
 
 .tagline{
   position:absolute;
@@ -86,27 +89,47 @@
   color:rgba(52,160,164,255);
   font-size:25px;
   top:80%;
-  left:50%;
-  transform: translateX(-50%);
   font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
 
 }
 .pg1main .menubutton{
-  width:20%;
+  width:15%;
   position:absolute;
-  right:2%;
+  right:4%;
+  top:3%;
   height:10%;
   visibility: hidden;
+
 }
 .pg1main .menubutton .menuicon{
   object-fit:contain;
-  width:50%;
+  width:100%;
   height:100%;
 }
 
 @media(max-width:600px){
+  .pg1main{
+    height:70vh;
+  }
   .pg1main .menubutton{
     visibility: visible;
+  }
+  .pg1main .header .menu,
+  .pg1main .header .socialmedia{
+    visibility:hidden;
+    width:10%;
+  }
+  .pg1main .header .logo{
+    width:25%;
+  }
+  .tagline{
+    left:10%;
+    top:40%;
+    font-size:25px;
+  }
+  .sideline{
+    font-size:20px;
+    top:85%;
   }
 }

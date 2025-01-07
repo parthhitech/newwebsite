@@ -28,7 +28,7 @@
 .pg5main .aboutus .aboutushead,
 .pg5main .contact .contactinfo{
   font-size:25px;
-  margin-bottom: 15px; /* Adds space between the heading and content */
+  margin-bottom: 5%; /* Adds space between the heading and content */
 
 }
 
@@ -41,4 +41,24 @@
 .pg5main .aboutus .aboutdesc,
 .pg5main .contact .address{
   color:rgb(78, 77, 77);
+}
+@media(max-width:600px){
+  .pg5main{
+    height:110vh;
+    flex-direction: column;
+    justify-content: center;
+    gap:2%;
+  }
+  
+  .pg5main .aboutus,
+  .pg5main .contact{
+    width:75%;
+  
+  }
+  .pg5main .logo5{
+    width:50%;
+    justify-content: center;
+  }
+  
+
 }
