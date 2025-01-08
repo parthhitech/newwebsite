@@ -44,7 +44,7 @@
 }
 @media(max-width:600px){
   .pg5main{
-    height:110vh;
+    height:75vh;
     flex-direction: column;
     justify-content: center;
     gap:2%;

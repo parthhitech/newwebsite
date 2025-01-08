@@ -204,11 +204,14 @@
   padding:0.5%;
 }
 @media(max-width:600px){
+  .pg3main{
+    height:100vh;
+  }
   .pg3main .projects .mainline{
     font-size:50px;
   }
   .pg3main .centered-line{
-    top:27%
+    top:37.5%
   }
   .pg3main .projectslider .carouselview .projectlist .project1,
   .pg3main .projectslider .carouselview .projectlist .project2,
@@ -225,7 +228,8 @@
 
   }
   .pg3main .projectslider{
-    height:27.5%;
+    height:40%;
+    top:44%;
   }
   .pg3main .projectslider .carouselview .lbutton img,.pg3main .projectslider .carouselview .rbutton img,
   .pg3main .projectslider .carouselview .lbutton img,.pg3main .projectslider .carouselview .lbutton img{
@@ -236,7 +240,7 @@
     width:12.5%;
   }
   .exploreimages{
-    top:62.5%;
+    top:87%;
     width:30%;
     height:3%;
     padding:1%;
