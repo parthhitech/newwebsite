@@ -54,6 +54,9 @@
   font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color:white;
 }
+.pg1main .header .menu a{
+  text-decoration: none;
+}
 .pg1main .header .socialmedia{
   display:flex;
   flex-direction:column;
@@ -99,20 +102,43 @@
   right:4%;
   top:3%;
   height:10%;
-  visibility: hidden;
-
+  display: none;
+}
+.pg1main .menubotton:focus,
+.pg1main .menubotton:active{
+  outline:none;
 }
 .pg1main .menubutton .menuicon{
   object-fit:contain;
   width:100%;
   height:100%;
 }
+.pg1main .menuphone{
+  font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color:rgb(209, 208, 208);
+  position:absolute;
+  top:14%;
+  right:0.5%;
+  width:50%;
+  height:22.5%;
+  padding:3%;
+  border-radius:10px;
+  display:none;
+
+}
+.pg1main .menuphone a{
+  color:black;
+  text-decoration:none ;
+}
+.pg1main .menuphone a:active{
+  color:#00b5ad;
+}
 @media(max-width:600px){
   .pg1main{
-    /* height:80vh; */
+    height:90vh;
   }
   .pg1main .menubutton{
-    visibility: visible;
+    display:block;
   }
   .pg1main .header .menu,
   .pg1main .header .socialmedia{
