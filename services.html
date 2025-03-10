@@ -1,5 +1,183 @@
 <!doctype html>
 <html>
-  <head></head>
-  <body></body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script/menu.js" defer></script>
+    <link rel="stylesheet" href="./mainstyles/general.css">
+    <link rel="stylesheet" href="./servicestyles/page1.css">
+    <link rel="stylesheet" href="./servicestyles/services-main.css">
+    <link rel="stylesheet" href="./mainstyles/page5.css">
+    <link rel="stylesheet" href="./mainstyles/page6.css">
+  </head>
+  <body>
+    <div class="pg1main">
+      
+      <div class="header">
+        <div class="logo">
+          <img  class="logoimage" src="./files/logowithoutbg.png">
+        </div>
+        <div class="menu">
+          <a class="home" href="index.html">Home</a>
+          <a class="services" href="services.html">Services</a>
+          <a class="projects">Projects</a>
+          <a class="clients">Clients</a>
+          <a class="contacts">Contacts</a>
+        </div>
+        <div class="socialmedia">
+          <a class="mail">
+            <img  class="mailicon"src="./files/iconmail.png">
+          </a>
+          <a class="phone">
+            <img  class="phoneicon"src="./files/iconphone.png">
+          </a>
+          <!-- <a class="website">
+            <!-- <img  class="webicon"src="./files/iconweb.png"> 
+          </a> -->
+        </div>
+      </div>
+      <button class="menubutton" id="menubutton">
+        <img  class="menuicon"  id="menuicon" src="./files/menuicon.png">
+      </button>
+      <div class="menuphone" id="menuphone">
+        <a href="index.html">Home</a>
+        <hr>
+        <a href="services.html">Services</a>
+        <hr>
+        <a>Projects</a>
+        <hr>
+        <a>Clients</a>
+        <hr>
+        <a>Contacts</a>
+        <hr>
+      </div>
+      
+      <div class="tagline">
+        <div class="tagline1">From Concept to Completion </div>
+        <!-- <div class="tagline2">–Your Trusted Partner in Turnkey Construction Solutions</div> -->
+      </div>
+      
+      <div class="sideline">–Your Trusted Partner in Turnkey Construction Solutions</div>
+    </div>
+
+    <div class="whatwedo">
+      <div class="whatwedo1">
+        <div class="imgdiv">
+          <img  class="img"src="./servicesimg/interior.png">
+        </div>
+        <div class="info">
+          <div class="ser">01</div>
+          <div class="type">Civil Work</div>
+          <hr>
+          <div class="subinfo">
+            Civil work forms the backbone of construction, involving foundational and structural activities like excavation, concrete works, and brick masonry. These ensure the strength, stability, and durability of buildings and infrastructure.
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="whatwedo1">
+        <div class="info">
+          <div class="ser">02</div>
+          <div class="type">Pre-Engineered Buildings</div>
+          <hr>
+          <div class="subinfo">
+            PEB systems offer cost-effective and time-efficient construction solutions. These structures are prefabricated with durable materials, featuring advanced designs for industrial, commercial, and residential use.
+          </div>
+        </div>
+        <div class="imgdiv">
+          <img  class="img"src="./servicesimg/expanded.jpg">
+        </div>
+      </div>
+
+      <div class="whatwedo1">
+        <div class="imgdiv">
+          <img  class="img"src="./servicesimg/interior.png">
+        </div>
+        <div class="info">
+          <div class="ser">03</div>
+          <div class="type">Interior</div>
+          <hr>
+          <div class="subinfo">
+            Interior services focus on transforming spaces into functional and aesthetically pleasing environments. This includes false ceilings, flooring, painting, modular furniture, and other customized solutions tailored to client needs.
+          </div>
+        </div>
+      </div>
+
+      <div class="whatwedo1">
+        <div class="info">
+          <div class="ser">04</div>
+          <div class="type">All Road Solutions</div>
+          <hr>
+          <div class="subinfo">
+            Road solutions involve the construction of durable and sustainable roads, pavements, and associated infrastructure. This includes drainage systems, fire safety measures, and cladding for aesthetic enhancements.
+          </div>
+        </div>
+        <div class="imgdiv">
+          <img  class="img"src="./servicesimg/interior.png">
+        </div>
+      </div>
+
+      <div class="whatwedo1">
+        <div class="imgdiv">
+          <img  class="img"src="./servicesimg/interior.png">
+        </div>
+        <div class="info">
+          <div class="ser">05</div>
+          <div class="type">Other Highlights</div>
+          <hr>
+          <div class="subinfo">
+            Additional construction services include waterproofing, fire-fighting systems, railings, staircases, and elevation enhancements. These specialized tasks ensure quality, safety, and design excellence in every project.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="pg6main">
+      <form class="contactform" action="https://api.web3forms.com/submit" method="POST" >
+        <div class="contactus">
+          <h2>Contact Us</h2>
+          <hr>
+        </div>   
+        <input type="hidden" name="access_key" value="753e303f-2fe3-4304-98ce-cfda54662f50">
+        <input type="text" name="name" placeholder="Name"  class="contactinputs" required>
+        <input type="tel" name="Phone Number" placeholder="Contact Number" class="contactinputs" required>
+        <input type="email" name="email" placeholder="Email"  class="contactinputs" >
+        <textarea name="message" placeholder="Message(or queries)" class="contactinputs" required></textarea>
+        <button type="submit">Request a Call Back</button>
+      </form>
+      
+    </div>
+
+    <div class="pg5main">
+      <div class="logo5">
+        <img class="logo5img" src="./files/logowithoutbg.png">
+      </div>
+      <div class="aboutus">
+        <div class="aboutushead">About Us</div>
+        <div class="aboutdesc">Parth HiTech Projects Pvt. Ltd. delivers reliable construction and contracting services across India, specializing in turnkey building solutions.</div>
+      </div>
+      <div class="contact">
+        <div class="contactinfo">Contact Info</div>
+        <div class="address">
+          101,Tradex Tower-II,
+          Commercial belt, Alpha-I,
+          Greater Noida
+          Gautam budh Nagar, Uttar
+          Pradesh
+        </div>
+        <div class="mailid">parthhitech@gmail.com</div>
+        <div class="number">0120-4567822, 7011470888</div>
+      </div>
+    </div>
+    
+    
+    <div class="copyright">
+      <div class="centered-line">
+        <hr>
+      </div>
+      <div class="copyrighttext">Copyright © 2025 Parth HiTech Projects Pvt. Ltd. </div>
+    </div>
+  </body>
 </html>

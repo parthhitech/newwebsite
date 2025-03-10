@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loader {
+  padding-top:10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  margin-bottom: 15vh; /* Adjusted from 150px */
+  transform: rotate(-35deg);
+}
+
+.container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animateSurface 1.5s linear infinite;
+}
+
+@keyframes animateSurface {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-5vw); /* Adjusted from 75px */
+  }
+}
+
+.container .box .cube {
+  position: relative;
+  width: 5vw; /* Adjusted from 75px */
+  height: 5vw; /* Adjusted from 75px */
+  background: #03e9f4;
+  box-shadow:
+    0 0 3vw rgba(3, 233, 244, 1),
+    0 0 6vw rgba(3, 233, 244, 1),
+    0 0 12vw rgba(3, 233, 244, 1),
+    0 0 20vw rgba(3, 233, 244, 0.5),
+    0 0 30vw rgba(3, 233, 244, 0.5);
+  transform-origin: bottom right;
+  animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+#pdf-viewer {
+  visibility: hidden;
+}
+
+@media(max-width:600px){
+  @keyframes animateSurface {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-12.5vw); /* Adjusted from 75px */
+    }
+  }
+  .container .box .cube{
+    width: 12.5vw; 
+    height: 12.5vw;
+  }
+  .loader{
+    padding-bottom:0%;
+  }
+  
+}
