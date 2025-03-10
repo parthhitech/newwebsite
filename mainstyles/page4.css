@@ -1,6 +1,7 @@
 .pg4main{
   height:65vh;
 }
+
 .shadow-effect {
   background: #fff;
   padding: 20px;
@@ -78,6 +79,7 @@ border:1px solid #ECECEC;
 
   
 }
+
 @media(max-width:600px){
   .pg4main{
     margin-top:30%;
