@@ -1,0 +1,53 @@
+.loadingtext{
+  color:#24a8af;
+  display:flex;
+  position:absolute;
+  top:70%;
+  left:50%;
+  transform: translateX(-50%);
+  text-align:center;
+  font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  font-size: 32px;
+  letter-spacing: 2px;
+  animation: fadeInOut 1.5s ease-in-out;
+}
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0; /* Completely transparent */
+  }
+  50% {
+    opacity: 1; /* Fully visible */
+  }
+}
+.word1,.word2,.word3{
+  margin-right:5%;
+  opacity: 0;
+  animation: showWord 2.5s ease-in forwards;
+}
+.word3{
+  margin-right:0%;
+}
+.word1{
+  animation-delay:1s;
+}
+.word2{
+  animation-delay:2.5s;
+}
+.word3{
+  animation-delay:4s;
+}
+@keyframes showWord {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media(max-width:600px){
+  .loadingtext{
+    font-size: 24px;
+    top:55%
+  }
+  
+
+}
