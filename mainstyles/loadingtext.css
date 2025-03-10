@@ -27,13 +27,13 @@
   margin-right:0%;
 }
 .word1{
-  animation-delay:1s;
+  animation-delay:0.5s;
 }
 .word2{
-  animation-delay:2.5s;
+  animation-delay:1.5s;
 }
 .word3{
-  animation-delay:4s;
+  animation-delay:2.5s;
 }
 @keyframes showWord {
   from {
@@ -46,7 +46,7 @@
 @media(max-width:600px){
   .loadingtext{
     font-size: 24px;
-    top:55%
+    top:65%
   }
   
 
