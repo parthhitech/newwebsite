@@ -242,8 +242,9 @@
   .exploreimages{
     top:87%;
     width:30%;
-    height:3%;
-    padding:1%;
+    height:5%;
+    padding:2%;
+    border-radius:10px;
   }
 }
 
