@@ -1,0 +1,198 @@
+.pg1main{
+  height:95vh;
+  padding:0.5%;
+  margin:3%;
+  background-color:black;
+  background-size: cover; /* Makes the image cover the entire div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat;
+  position:relative;
+  border-radius:30px;
+  display:flex;
+  justify-content: center;
+  
+}
+
+.pg1main .header{
+  /* background-color: lightcoral; */
+  position:absolute;/********/
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  left:1%;
+  right:1%;
+  height:20%;
+}
+.pg1main .header .logo{
+  height:75%;
+  margin-left:1%;
+  width:10%;
+}
+
+.pg1main .header .logo .logoimage{
+  max-height:100%;
+  max-width:100%;
+  object-fit:contain;
+
+}
+.pg1main .header .menu{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.pg1main .header .menu *:hover{
+  color:rgba(52,160,164,255);
+
+  
+}
+.pg1main .header .menu *{
+  padding-left:2%;
+  padding-right:2%;
+  font-size:20px;
+  font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:white;
+}
+.pg1main .header .menu a{
+  text-decoration: none;
+}
+
+
+.pg1main .header .socialmedia{
+  display:flex;
+  flex-direction:column;
+  padding-right:2%;
+}
+.pg1main .header .socialmedia *{
+  margin-top:10%;
+  align-items:center;
+}
+.pg1main .header .socialmedia .mailicon,.pg1main .header .socialmedia .phoneicon{
+  width:60%;
+}
+/* .pg1main .header .socialmedia .webicon{
+  width:50px;
+  height:50px;
+  margin-right:10px;
+} */
+
+.tagline{
+  position:absolute;
+  display:inline-block;
+  top:45%;
+  left:12%;
+  color:white;
+  font-size:35px;
+  font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.sideline1{
+  position:absolute;
+  display:inline-block;
+  color:rgba(52,160,164,255);
+  font-size:30px;
+  top:55%;
+  font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  left:35%;
+}
+.sideline2{
+  position:absolute;
+  display:inline-block;
+  color:rgba(52,160,164,255);
+  font-size:30px;
+  top:55%;
+  font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  left:60%;
+  
+}
+.pg1main .menubutton{
+  width:15%;
+  position:absolute;
+  right:4%;
+  top:3%;
+  height:10%;
+  display: none;
+}
+.pg1main .menubotton:focus,
+.pg1main .menubotton:active{
+  outline:none;
+}
+.pg1main .menubutton .menuicon{
+  object-fit:contain;
+  width:100%;
+  height:100%;
+}
+.pg1main .menuphone{
+  font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color:rgb(209, 208, 208);
+  position:absolute;
+  top:14%;
+  right:0.5%;
+  width:50%;
+  height:22.5%;
+  padding:3%;
+  border-radius:10px;
+  display:none;
+
+}
+.pg1main .menuphone a{
+  color:black;
+  text-decoration:none ;
+}
+.pg1main .menuphone a:active{
+  color:#00b5ad;
+}
+/* .pg1main .menuphone a:hover{
+  color:#00b5ad;
+notworking
+} */
+
+
+.projectsGrid{
+  position:absolute;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 30%;
+  gap: 15px;
+  
+}
+.projectsGrid *{
+background-color: black;
+}
+
+
+
+@media(max-width:600px){
+  .pg1main{
+    height:90vh;
+    background-image:  linear-gradient(to bottom, rgba(209, 208, 208, 0) 85%, rgb(209, 208, 208) 100%),url("../files/bg2vert.png");
+  }
+  .pg1main .menubutton{
+    display:block;
+  }
+  .pg1main .header .menu,
+  .pg1main .header .socialmedia{
+    visibility:hidden;
+    width:10%;
+  }
+  .pg1main .header .logo{
+    width:25%;
+  }
+  .tagline{
+    left:10%;
+    top:40%;
+    font-size:25px;
+  }
+  .sideline1{
+    font-size:20px;
+    top:77.5%;
+    left:5%;
+  }
+  .sideline2{
+    font-size:20px;
+    top:82.5%;
+    left:17.5%;
+  }
+}
