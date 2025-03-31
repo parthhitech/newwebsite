@@ -1,5 +1,5 @@
 .pg1main{
-  height:95vh;
+  height:150vh;
   padding:0.5%;
   margin:3%;
   background-color:black;
@@ -23,7 +23,7 @@
   width:100%;
   left:1%;
   right:1%;
-  height:20%;
+  height:12.731%;
 }
 .pg1main .header .logo{
   height:75%;
@@ -148,20 +148,6 @@
   color:#00b5ad;
 notworking
 } */
-
-
-.projectsGrid{
-  position:absolute;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 30%;
-  gap: 15px;
-  
-}
-.projectsGrid *{
-background-color: black;
-}
-
 
 
 @media(max-width:600px){

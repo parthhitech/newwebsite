@@ -1,0 +1,74 @@
+.projectsGrid{
+  position:absolute;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+  height:75%;
+  width:98%;
+  top:20%;
+  
+}
+.projectsGrid *{
+  position: relative; /* Required for absolute positioning of the overlay */
+  background-color: lightblue;
+  overflow: hidden; /* Ensures the overlay stays within the grid box */
+  text-align: center;
+}
+.projectsGrid *::before {
+  content: "";
+  position: absolute;
+  bottom: -100%; /* Start outside the grid box */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4); /* White translucent effect */
+  transition: bottom 1s ease-in-out;
+}
+
+.projectsGrid *:hover::before {
+  bottom: 0;
+}
+
+.projectsGrid > *:nth-child(1){
+  grid-column: span 2;
+}
+.projectsGrid > *:nth-child(3){
+  grid-column: span 2;
+}
+.projectsGrid > *:nth-child(5){
+  grid-column: span 2;
+}
+.projectsGrid > *:nth-child(6){
+  grid-column: span 2;
+}
+.projectsGrid > *:nth-child(7){
+  grid-column: span 2;
+}
+.projectsGrid > *:nth-child(8){
+  grid-row: span 2;
+}
+.projectsGrid > *:nth-child(10){
+  grid-column: span 2;
+}
+.projectsGrid > *:nth-child(12){
+  grid-row: span 2;
+}
+.projectsGrid > *:nth-child(13){
+  grid-column: span 2;
+}.projectsGrid > *:nth-child(14){
+  grid-column: span 2;
+}
+.projectsGrid > *:nth-child(15){
+  grid-column: span 2;
+}
+.projectsGrid > *:nth-child(17){
+  grid-column: span 2;
+}
+
+.projectsGrid > *:nth-child(20){
+  grid-column: span 2;
+}
+.projectsGrid > *:nth-child(22){
+  grid-column: span 2;
+}
+

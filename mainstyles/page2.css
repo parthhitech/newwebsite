@@ -32,7 +32,7 @@
   display:grid;
   /* background-color:black; */
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  column-gap:5%;
+  column-gap:2.5%;
   top:40% ;
   padding-left:2%;
   padding-right:2%;
@@ -42,10 +42,29 @@
 
 
 .pg2main .whatdetail *{
-  /* background-color:lightblue; */
-  padding:1%;
+  background-color:rgb(221, 221, 221);
+  padding:4%;
   font-size:20px;
   font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* for animation */
+  border-radius:15px;
+  position: relative; /* Required for absolute positioning of the overlay */
+  overflow: hidden; /* Ensures the overlay stays within the grid box */
+  text-align: center;
+}
+.whatdetail *::before {
+  content: "";
+  position: absolute;
+  bottom: -100%; /* Start outside the grid box */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4); /* White translucent effect */
+  transition: bottom 1s ease-in-out;
+}
+
+.whatdetail *:hover::before {
+  bottom: 0;
 }
 
 .pg2main .whatdetail .detail1 .detail1-1,.pg2main .whatdetail .detail2 .detail2-1, .pg2main .whatdetail .detail3 .detail3-1,.pg2main .whatdetail .detail4 .detail4-1, .pg2main .whatdetail .detail5 .detail5-1{
@@ -73,23 +92,75 @@
 
 @media (max-width: 600px) {
   .pg2main{
-    height:150vh;
+    height:125vh;
   }
   .pg2main .what .mainline{
     font-size:50px;
   }
   .pg2main .whatdetail{
-    grid-template-columns: 1fr 1fr;
-    top:35%;
-    row-gap: 2%;;
+    grid-template-columns: 1fr;
+    top:37.5%;
+    row-gap: 2%;
+    width:80%;
+    column-width:100%;
+    
+    
   }
   .pg2main .centered-line{
-    top:30%
+    top:33%;
   }
   .pg2main .whatdetail *{
     font-size:18px;
+    padding:3%;
   }
-  .pg2main .whatdetail .detail5{
-    grid-column: span 2;
+  
+  .detail1-3,.detail2-3,.detail3-3,.detail4-3,.detail5-3{
+    display:none;
+    position:absolute;
   }
+
+  /* 1 */
+  .detail1-1:hover ~ .detail1-3,
+  .detail1-2:hover ~ .detail1-3 {
+    display: block;
+  }
+  .whatdetail:has(.detail1-1:hover, .detail1-2:hover) {
+    grid-template-rows: 3fr 1fr 1fr 1fr 1fr;
+  }
+/* 2 */
+  .detail2-1:hover ~ .detail2-3,
+  .detail2-2:hover ~ .detail2-3 {
+    display: block;
+  }
+  .whatdetail:has(.detail2-1:hover, .detail2-2:hover) {
+    grid-template-rows: 1fr 3fr 1fr 1fr 1fr;
+  }
+  /* 3 */
+  .detail3-1:hover ~ .detail3-3,
+  .detail3-2:hover ~ .detail3-3 {
+    display: block;
+  }
+  .whatdetail:has(.detail3-1:hover, .detail3-2:hover) {
+    grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
+  }
+/* 4 */
+  .detail4-1:hover ~ .detail4-3,
+  .detail4-2:hover ~ .detail4-3 {
+    display: block;
+  }
+  .whatdetail:has(.detail4-1:hover, .detail4-2:hover) {
+    grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
+  }
+/* 5 */
+  .detail5-1:hover ~ .detail5-3,
+  .detail5-2:hover ~ .detail5-3 {
+    display: block;
+  }
+  .whatdetail:has(.detail5-1:hover, .detail5-2:hover) {
+    grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
+  }
+
+
+
+
 }
