@@ -92,7 +92,7 @@
 
 @media (max-width: 600px) {
   .pg2main{
-    height:125vh;
+    height:140vh;
   }
   .pg2main .what .mainline{
     font-size:50px;
@@ -117,9 +117,19 @@
   .detail1-3,.detail2-3,.detail3-3,.detail4-3,.detail5-3{
     display:none;
     position:absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
   }
+  .detail1-3.active, 
+  .detail2-3.active, 
+  .detail3-3.active, 
+  .detail4-3.active, 
+  .detail5-3.active {
+    display: block;
+    opacity: 1;
+}
 
-  /* 1 */
+  /* 1 
   .detail1-1:hover ~ .detail1-3,
   .detail1-2:hover ~ .detail1-3 {
     display: block;
@@ -127,7 +137,7 @@
   .whatdetail:has(.detail1-1:hover, .detail1-2:hover) {
     grid-template-rows: 3fr 1fr 1fr 1fr 1fr;
   }
-/* 2 */
+/* 2 
   .detail2-1:hover ~ .detail2-3,
   .detail2-2:hover ~ .detail2-3 {
     display: block;
@@ -135,7 +145,7 @@
   .whatdetail:has(.detail2-1:hover, .detail2-2:hover) {
     grid-template-rows: 1fr 3fr 1fr 1fr 1fr;
   }
-  /* 3 */
+  /* 3 
   .detail3-1:hover ~ .detail3-3,
   .detail3-2:hover ~ .detail3-3 {
     display: block;
@@ -143,7 +153,7 @@
   .whatdetail:has(.detail3-1:hover, .detail3-2:hover) {
     grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
   }
-/* 4 */
+/* 4 
   .detail4-1:hover ~ .detail4-3,
   .detail4-2:hover ~ .detail4-3 {
     display: block;
@@ -151,7 +161,7 @@
   .whatdetail:has(.detail4-1:hover, .detail4-2:hover) {
     grid-template-rows: 1fr 1fr 1fr 3fr 1fr;
   }
-/* 5 */
+/* 5 
   .detail5-1:hover ~ .detail5-3,
   .detail5-2:hover ~ .detail5-3 {
     display: block;
@@ -159,7 +169,7 @@
   .whatdetail:has(.detail5-1:hover, .detail5-2:hover) {
     grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
   }
-
+*/
 
 
 
